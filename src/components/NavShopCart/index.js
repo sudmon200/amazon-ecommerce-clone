@@ -4,8 +4,9 @@ import ShoppingCartOutlinedIcon from '@material-ui/icons/ShoppingCartOutlined';
 function NavShopCart() {
   return (
     <div className='navShopCart'>
-      <ShoppingCartOutlinedIcon fontSize='large' />
-      <span className='navShopCart__textBold'>Cart</span>
+      <ShoppingCartOutlinedIcon style={{ fontSize: 30 }} />
+      <span className='navShopCart__count'>0</span>
+      {/* <span className='navShopCart__textBold'>Cart</span> */}
     </div>
   );
 }

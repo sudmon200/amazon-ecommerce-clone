@@ -59,6 +59,13 @@
 
 .navShopCart {
   margin: 0 15px;
+  display: flex;
+  .navShopCart__count {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 1px;
+    color: #febd69;
+  }
   .navShopCart__textBold {
     font-weight: bold;
     font-size: 14px;
