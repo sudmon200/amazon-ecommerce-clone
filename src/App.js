@@ -1,36 +1,19 @@
 import React from 'react';
-import Header from './components/Header';
-import Banner from './components/Banner';
-import Product from './components/Product';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import Home from './containers/Home';
+import Checkout from './containers/Checkout';
+import Shell from './components/Shell';
 
 function App() {
   return (
-    <>
-      <Header />
-      <div className='layout'>
-        <Banner />
-        <div className='productLayout'>
-          <div className='productLayout__row'>
-            <Product />
-            <Product />
-            <Product />
-            <Product />
-          </div>
-          <div className='productLayout__row'>
-            <Product />
-            <Product />
-            <Product />
-          </div>
-          <div className='productLayout__row'>
-            <Product />
-            <Product />
-          </div>
-          <div className='productLayout__row'>
-            <Product />
-          </div>
-        </div>
-      </div>
-    </>
+    <Shell>
+      <Router>
+        <Switch>
+          <Route exact path='/' component={Home}></Route>
+          <Route exact path='/checkout' component={Checkout}></Route>
+        </Switch>
+      </Router>
+    </Shell>
   );
 }
 

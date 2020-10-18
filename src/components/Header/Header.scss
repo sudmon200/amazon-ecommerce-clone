@@ -11,7 +11,7 @@
   .header__logo {
     height: 40px;
     object-fit: contain;
-    margin: 18px 0px 10px 0px;
+    margin: 18px 0px 10px 20px;
   }
 }
 
@@ -60,7 +60,7 @@
 }
 
 .navShopCart {
-  margin: 0 15px;
+  margin: 0 20px 0 15px;
   display: flex;
   .navShopCart__count {
     font-weight: bold;
