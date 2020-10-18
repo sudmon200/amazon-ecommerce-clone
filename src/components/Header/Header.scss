@@ -62,11 +62,18 @@
 .navShopCart {
   margin: 0 20px 0 15px;
   display: flex;
+
+  & a:link,
+  a:visited {
+    color: white;
+    text-decoration: none;
+  }
   .navShopCart__count {
     font-weight: bold;
     font-size: 20px;
-    margin-top: 1px;
+    position: relative;
     color: #febd69;
+    top: -9px;
   }
   .navShopCart__textBold {
     font-weight: bold;

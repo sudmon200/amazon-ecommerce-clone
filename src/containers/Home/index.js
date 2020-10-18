@@ -6,8 +6,8 @@ function Home() {
   return (
     <div className='layout'>
       <Banner />
-      <div className='productLayout'>
-        <div className='productLayout__row'>
+      <div className='layout__product'>
+        <div className='product__row'>
           <Product
             info={'OnePlus 8T 5G (Lunar Silver, 8GB RAM, 128GB Storage)'}
             price={'₹ 42,999.00'}

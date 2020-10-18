@@ -6,14 +6,14 @@ import Shell from './components/Shell';
 
 function App() {
   return (
-    <Shell>
-      <Router>
+    <Router>
+      <Shell>
         <Switch>
           <Route exact path='/' component={Home}></Route>
           <Route exact path='/checkout' component={Checkout}></Route>
         </Switch>
-      </Router>
-    </Shell>
+      </Shell>
+    </Router>
   );
 }
 

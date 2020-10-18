@@ -1,0 +1,18 @@
+.layoutCheckout__subtotal {
+  background-color: #f3f3f3;
+  height: fit-content;
+  padding: 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  margin: 0 0 0 20px;
+  h3 {
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    & span {
+      font-weight: bold;
+    }
+  }
+  button {
+    width: 100%;
+  }
+}

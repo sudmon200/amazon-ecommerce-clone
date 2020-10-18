@@ -1,0 +1,24 @@
+.layout__checkout {
+  background-color: white;
+  padding: 20px;
+  min-height: 1200px;
+}
+
+.layoutCheckout__bannerAd {
+  img {
+    width: 100%;
+  }
+}
+
+.layoutCheckout__wrapper {
+  display: flex;
+  padding: 20px 0;
+  & .layoutCheckout__cartlist {
+    flex: 1;
+  }
+  h2 {
+    margin: 10px 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+  }
+}

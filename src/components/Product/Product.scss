@@ -1,4 +1,4 @@
-.productLayout__row {
+.product__row {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -35,18 +35,6 @@
     margin: 15px 0 20px 0;
   }
   & .product__button {
-    margin: 0;
-    outline: 0;
-    border: 1;
     width: 160px;
-    color: #111;
-    cursor: pointer;
-    align-self: center;
-    line-height: 29px;
-    border-radius: 2px;
-    background-color: #febd69;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
-    background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
-    border-color: #a88734 #9c7e31 #846a29;
   }
 }
