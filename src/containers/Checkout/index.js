@@ -1,9 +1,16 @@
 import React from 'react';
 import Subtotal from '../../components/Subtotal';
+import CheckoutProduct from '../../components/CheckoutProduct';
+import { useSelector } from 'react-redux';
+import { selectCart, getCartTotal } from '../../redux/cartSlice';
 
 import './Checkout.scss';
 
 function Checkout() {
+  const { cart } = useSelector(selectCart);
+  const itemCount = cart?.length;
+  const subTotal = getCartTotal(cart);
+
   return (
     <div className='layout'>
       <div className='layout__checkout'>
@@ -16,8 +23,23 @@ function Checkout() {
         <div className='layoutCheckout__wrapper'>
           <div className='layoutCheckout__cartlist'>
             <h2>Your Shoppping Cart</h2>
+            {!itemCount > 0 ? (
+              <h4>
+                Your shoppping cart is empty, please add items to the cart!
+              </h4>
+            ) : (
+              cart.map((item) => (
+                <CheckoutProduct
+                  id={item.id}
+                  info={item.info}
+                  price={item.price}
+                  image={item.image}
+                  ratings={item.ratings}
+                />
+              ))
+            )}
           </div>
-          <Subtotal />
+          <Subtotal productCount={itemCount} subTotal={subTotal} />
         </div>
       </div>
     </div>

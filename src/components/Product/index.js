@@ -24,7 +24,10 @@ function Product({ id, info, price, image, ratings }) {
   return (
     <div className='product'>
       <div className='product__info'>{info}</div>
-      <div className='product__price'>{price}</div>
+      <div className='product__price'>
+        <span>₹ </span>
+        {price}
+      </div>
       <div className='product__rating'>
         {Array(ratings)
           .fill()

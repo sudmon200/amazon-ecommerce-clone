@@ -11,9 +11,9 @@ function Home() {
           <Product
             id={1}
             info={'OnePlus 8T 5G (Lunar Silver, 8GB RAM, 128GB Storage)'}
-            price={'₹ 42,999.00'}
+            price={42999.99}
             image={
-              'https://m.media-amazon.com/images/I/71CuwgwCQdL._AC_UY436_FMwebp_QL65_.jpg'
+              'https://m.media-amazon.com/images/I/71m05O2uNdL._AC_AA180_.jpg'
             }
             ratings={5}
           />
@@ -22,27 +22,27 @@ function Home() {
             info={
               'Apple iPhone 11 (64GB) - Black (EarPods & Power Adapter in The Box)'
             }
-            price={'₹ 48,999.00'}
+            price={48999.99}
             image={
-              'https://images-na.ssl-images-amazon.com/images/I/51kGDXeFZKL._SL1024_.jpg'
+              'https://m.media-amazon.com/images/I/51o5RmQtroL._AC_AA180_.jpg'
             }
             ratings={4}
           />
           <Product
             id={3}
             info={'Samsung Galaxy M51 (Electric Blue, 6GB RAM, 128GB Storage)'}
-            price={'₹ 22,499.00'}
+            price={22499.99}
             image={
-              'https://images-na.ssl-images-amazon.com/images/I/710weRkP-nL._SL1500_.jpg'
+              'https://m.media-amazon.com/images/I/71ahT-X2FgL._AC_AA180_.jpg'
             }
             ratings={3}
           />
           <Product
             id={4}
             info={'Redmi Note 8 (Neptune Blue, 4GB RAM, 64GB Storage)'}
-            price={'₹ 11,499.00'}
+            price={11499.99}
             image={
-              'https://images-na.ssl-images-amazon.com/images/I/61Z-7BVaFUL._SL1500_.jpg'
+              'https://m.media-amazon.com/images/I/61Z-7BVaFUL._AC_AA180_.jpg'
             }
             ratings={2}
           />

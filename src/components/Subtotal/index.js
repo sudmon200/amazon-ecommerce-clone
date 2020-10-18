@@ -3,19 +3,20 @@ import CurrencyFormat from 'react-currency-format';
 
 import './Subtotal.scss';
 
-function Subtotal() {
+function Subtotal({ productCount, subTotal }) {
   return (
     <div className='layoutCheckout__subtotal'>
       <CurrencyFormat
         renderText={(value) => (
           <>
             <h3>
-              Subtotal (0 items): <span> 0</span>
+              Subtotal ({productCount} {productCount > 1 ? 'items' : 'item'}):
+              <span> {value}</span>
             </h3>
           </>
         )}
         decimalScale={2}
-        value={0}
+        value={subTotal}
         displayType={'text'}
         thousandSeparator={true}
         prefix={'₹'}

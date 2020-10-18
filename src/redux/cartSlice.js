@@ -17,6 +17,9 @@ export const cartSlice = createSlice({
   },
 });
 
+export const getCartTotal = (cart) =>
+  cart?.reduce((amount, item) => item.price + amount, 0);
+
 export const { addToCart, removeFromCart } = cartSlice.actions;
 export const selectCart = (state) => state.cart;
 
