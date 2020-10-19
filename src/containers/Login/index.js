@@ -9,9 +9,6 @@ function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  console.log('email=>', email);
-  console.log('password =>', password);
-
   const signIn = (e) => {
     e.preventDefault();
     auth.signInWithEmailAndPassword(email, password).then((auth) => {
