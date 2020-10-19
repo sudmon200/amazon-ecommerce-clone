@@ -14,14 +14,19 @@
     }
   }
   .checkoutProduct__wrapper {
-    padding: 10px 0;
+    padding: 15px 0;
   }
   .checkoutProduct__info {
     font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .checkoutProduct__price {
+    font-weight: 500;
+    color: #b12704;
     margin-bottom: 5px;
   }
   .checkoutProduct__rating {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
   .checkoutProduct__button {
     width: 180px;

@@ -12,7 +12,20 @@ export const cartSlice = createSlice({
     },
     removeFromCart: (state, action) => {
       console.log('action =>', action);
-      state.cart = state.cart - action.payload.cart;
+
+      const index = state.cart.findIndex(
+        (cartItem) => cartItem.uuid === action.payload.uuid
+      );
+
+      let newCart = [...state.cart];
+
+      if (index >= 0) {
+        newCart.splice(index, 1);
+      } else {
+        console.warn(`product with ${action.payload.uuid} not in basket`);
+      }
+
+      state.cart = newCart;
     },
   },
 });

@@ -1,17 +1,19 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import CurrencyFormat from 'react-currency-format';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../redux/cartSlice';
 
 import './Product.scss';
 
-function Product({ id, info, price, image, ratings }) {
+function Product({ productId, info, price, image, ratings }) {
   const dispatch = useDispatch();
   const addItemToCart = () => {
-    console.log('lets distpatch');
     dispatch(
       addToCart({
         cart: {
-          id: id,
+          uuid: uuidv4(),
+          productId: productId,
           info: info,
           price: price,
           image: image,
@@ -25,8 +27,14 @@ function Product({ id, info, price, image, ratings }) {
     <div className='product'>
       <div className='product__info'>{info}</div>
       <div className='product__price'>
-        <span>₹ </span>
-        {price}
+        <CurrencyFormat
+          renderText={(value) => <>{value}</>}
+          decimalScale={2}
+          value={price}
+          displayType={'text'}
+          thousandSeparator={true}
+          prefix={'₹'}
+        />
       </div>
       <div className='product__rating'>
         {Array(ratings)
