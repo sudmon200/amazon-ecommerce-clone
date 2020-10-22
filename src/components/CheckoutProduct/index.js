@@ -42,7 +42,7 @@ function CheckoutProduct({ uuid, info, price, image, ratings }) {
             ))}
         </div>
         <button
-          className='checkoutProduct__button'
+          className='button__primary checkoutProduct__button'
           onClick={removeItemFromCart}
         >
           Remove from Cart

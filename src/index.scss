@@ -35,17 +35,34 @@ code {
   }
 }
 
+.layout {
+  & .button__primary {
+    border-radius: 3px;
+    color: #111;
+    background: #febd69;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+    background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+    border: 1px solid #a88734;
+    border-color: #a88734 #9c7e31 #846a29;
+  }
+
+  & .button__secondary {
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+    background: #eff1f3;
+    background: -webkit-linear-gradient(top, #f7f8fa, #e7e9ec);
+    background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+    border: 1px solid #6c6e73;
+    border-color: #adb1b8 #a2a6ac #8d9096;
+  }
+}
 button {
+  cursor: pointer;
   margin: 0;
   outline: 0;
-  border: 1;
-  color: #111;
-  cursor: pointer;
   align-self: center;
   line-height: 25px;
-  border-radius: 2px;
-  background-color: #febd69;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
-  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
-  border-color: #a88734 #9c7e31 #846a29;
+}
+button:disabled {
+  cursor: initial;
 }
