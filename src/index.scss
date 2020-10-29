@@ -34,6 +34,16 @@ code {
     width: 100%;
   }
 }
+button {
+  cursor: pointer;
+  margin: 0;
+  outline: 0;
+  align-self: center;
+  line-height: 25px;
+  &:disabled {
+    cursor: initial;
+  }
+}
 
 .layout {
   & .button__primary {
@@ -44,6 +54,11 @@ code {
     background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
     border: 1px solid #a88734;
     border-color: #a88734 #9c7e31 #846a29;
+    &:hover {
+      border-color: #a88734 #9c7e31 #846a29;
+      background: -webkit-linear-gradient(top, #f5d78e, #eeb933);
+      background: linear-gradient(to bottom, #f5d78e, #eeb933);
+    }
   }
 
   & .button__secondary {
@@ -55,14 +70,4 @@ code {
     border: 1px solid #6c6e73;
     border-color: #adb1b8 #a2a6ac #8d9096;
   }
-}
-button {
-  cursor: pointer;
-  margin: 0;
-  outline: 0;
-  align-self: center;
-  line-height: 25px;
-}
-button:disabled {
-  cursor: initial;
 }

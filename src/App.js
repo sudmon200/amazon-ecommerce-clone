@@ -4,6 +4,7 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Home from './containers/Home';
 import Checkout from './containers/Checkout';
 import Login from './containers/Login';
+import Payment from './containers/Payment';
 import Shell from './components/Shell';
 import { setUser } from './redux/userSlice';
 import { auth } from './firebase';
@@ -32,6 +33,7 @@ function App() {
           <Route exact path='/' component={Home}></Route>
           <Route exact path='/checkout' component={Checkout}></Route>
           <Route exact path='/login' component={Login}></Route>
+          <Route exact path='/payment' component={Payment}></Route>
         </Switch>
       </Shell>
     </Router>

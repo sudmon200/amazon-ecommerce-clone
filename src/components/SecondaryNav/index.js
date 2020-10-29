@@ -24,8 +24,12 @@ function SecondaryNav() {
           textTwo={user ? 'Sign out' : 'Sign in'}
         />
       </Link>
-      <SecondaryNavItem textOne={'Returns'} textTwo={'& Orders'} />
-      <SecondaryNavItem textOne={'Your'} textTwo={'Prime'} />
+      <Link onClick={() => alert('Info:: This has not been implemented!')}>
+        <SecondaryNavItem textOne={'Returns'} textTwo={'& Orders'} />
+      </Link>
+      <Link onClick={() => alert('Info:: This has not been implemented!')}>
+        <SecondaryNavItem textOne={'Your'} textTwo={'Prime'} />
+      </Link>
     </div>
   );
 }
