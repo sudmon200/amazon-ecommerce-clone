@@ -16,6 +16,17 @@
 #### Issue Tracking:
 
 
+#### Installation
+1. Clone the repo
+2. Install dependencies `npm install` 
+3. Start the local server `npm start`
+4. Load http://localhost:3000/
+
+#### Built With
+* React, Redux 
+* Firebase
+* Stripe
+
 #### Screenshots
 
 ##### Login
