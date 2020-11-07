@@ -31,4 +31,7 @@
   .checkoutProduct__button {
     width: 180px;
   }
+  &:last-child {
+    border-bottom: none;
+  }
 }

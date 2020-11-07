@@ -8,6 +8,13 @@ import Payment from './containers/Payment';
 import Shell from './components/Shell';
 import { setUser } from './redux/userSlice';
 import { auth } from './firebase';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
+
+// Mo Worries -  it's a public key
+const promise = loadStripe(
+  'pk_test_51Hheg7H8NRZrUDPnRzDIctuwXCHSuDOOhGxCLguRNYlNrpIVyuyWwRrXOTfhzoBeakuoTeM9sxvSJ6DLb35o4CQY00cY4LfaSp'
+);
 
 function App() {
   const dispatch = useDispatch();
@@ -33,7 +40,9 @@ function App() {
           <Route exact path='/' component={Home}></Route>
           <Route exact path='/checkout' component={Checkout}></Route>
           <Route exact path='/login' component={Login}></Route>
-          <Route exact path='/payment' component={Payment}></Route>
+          <Elements stripe={promise}>
+            <Route exact path='/payment' component={Payment}></Route>
+          </Elements>
         </Switch>
       </Shell>
     </Router>
