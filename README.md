@@ -1,4 +1,4 @@
-# Amazon e-Commerce clone with ReactJS
+# [WIP] Amazon e-Commerce clone with ReactJS
 
 * Registration and Authentication
 * Product Listing
