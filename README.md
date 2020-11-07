@@ -3,12 +3,11 @@
 * Registration and Authentication
 * Product Listing
 * Shopping Cart
-* Checkout using Credit Card
-
-#### Working Features:
-
+* Checkout using Credit Card 
 
 #### [Live Demo :rocket: ]
+
+#### Working Features:
 
 #### Planned Features:
 
